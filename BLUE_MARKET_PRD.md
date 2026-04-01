@@ -7,31 +7,37 @@
 ## Table of Contents
 
 ### 1. [Executive Summary](#1-executive-summary)
+
 - [1.1 What is Blue Market?](#11-what-is-blue-market)
 - [1.2 Problem Statement](#12-problem-statement)
 - [1.3 Solution](#13-solution)
 - [1.4 Value Proposition](#14-value-proposition)
 
 ### 2. [Product Vision](#2-product-vision)
+
 - [2.1 Mission Statement](#21-mission-statement)
 - [2.2 Product Pillars](#22-product-pillars)
 - [2.3 Future Vision (18 months)](#23-future-vision-18-months)
 
 ### 3. [User Personas](#3-user-personas)
+
 - [3.1 Primary Personas](#31-primary-personas)
 - [3.2 Secondary Personas](#32-secondary-personas)
 
 ### 4. [Market Opportunity](#4-market-opportunity)
+
 - [4.1 Market Size](#41-market-size)
 - [4.2 Target Market Segments](#42-target-market-segments)
 - [4.3 Competitive Analysis](#43-competitive-analysis)
 - [4.4 Market Timing](#44-market-timing)
 
 ### 5. [Core Features](#5-core-features)
+
 - [5.1 Feature Overview](#51-feature-overview)
 - [5.2 Feature Priority Matrix](#52-feature-priority-matrix)
 
 ### 6. [Feature Specifications](#6-feature-specifications)
+
 - [6.1 User Authentication & Management](#61-user-authentication--management)
 - [6.2 Product & Catalog](#62-product--catalog)
 - [6.3 Shopping & Checkout](#63-shopping--checkout)
@@ -39,22 +45,26 @@
 - [6.5 Seller Portal](#65-seller-portal)
 
 ### 7. [User Flows](#7-user-flows)
+
 - [7.1 Customer Purchase Flow](#71-customer-purchase-flow)
 - [7.2 Charity Product Flow](#72-charity-product-flow)
 - [7.3 Checkout Donation Flow](#73-checkout-donation-flow)
 
 ### 8. [Data Requirements](#8-data-requirements)
+
 - [8.1 Data Models](#81-data-models)
 - [8.2 Data Retention Policy](#82-data-retention-policy)
 - [8.3 Privacy & Compliance](#83-privacy--compliance)
 
 ### 9. [Non-Functional Requirements](#9-non-functional-requirements)
+
 - [9.1 Performance](#91-performance)
 - [9.2 Availability](#92-availability)
 - [9.3 Scalability](#93-scalability)
 - [9.4 Security](#94-security)
 
 ### 10. [Success Metrics](#10-success-metrics)
+
 - [10.1 Business Metrics](#101-business-metrics)
 - [10.2 Technical Metrics](#102-technical-metrics)
 - [10.3 User Engagement Metrics](#103-user-engagement-metrics)
@@ -83,12 +93,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 1.4 Value Proposition
 
-| Stakeholder | Value |
-|-------------|-------|
-| **Buyers** | Shop while making a difference; transparent giving |
-| **Sellers** | Differentiate through purpose; build loyal customer base |
-| **Charities** | New fundraising channel; direct connection to shoppers |
-| **Platform** | Unique market position; sustainable revenue model |
+| Stakeholder   | Value                                                    |
+| ------------- | -------------------------------------------------------- |
+| **Buyers**    | Shop while making a difference; transparent giving       |
+| **Sellers**   | Differentiate through purpose; build loyal customer base |
+| **Charities** | New fundraising channel; direct connection to shoppers   |
+| **Platform**  | Unique market position; sustainable revenue model        |
 
 ---
 
@@ -96,7 +106,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 2.1 Mission Statement
 
-*"Making charitable giving an integral part of every shopping experience."*
+_"Making charitable giving an integral part of every shopping experience."_
 
 ### 2.2 Product Pillars
 
@@ -120,90 +130,99 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### Emma - The Conscious Shopper
 
-| Attribute | Details |
-|-----------|---------|
-| Age | 28 |
-| Occupation | Marketing Manager |
-| Location | Urban, San Francisco |
-| Income | $85,000/year |
+| Attribute  | Details              |
+| ---------- | -------------------- |
+| Age        | 28                   |
+| Occupation | Marketing Manager    |
+| Location   | Urban, San Francisco |
+| Income     | $85,000/year         |
 
 **Goals:**
+
 - Find quality products at fair prices
 - Support businesses that align with her values
 - Track her positive impact over time
 
 **Pain Points:**
+
 - Feels guilty about impulse purchases
 - Doesn't trust where donations actually go
 - Tired of "greenwashing" from brands
 
 **Tech Behavior:**
+
 - Mobile-first shopper
 - Uses Instagram for product discovery
 - Expects Amazon-like delivery speed
 - Active on LinkedIn for work
 
-> *"I want to know exactly where my money is going."*
+> _"I want to know exactly where my money is going."_
 
 ---
 
 #### Marcus - The Impact Seller
 
-| Attribute | Details |
-|-----------|---------|
-| Age | 42 |
+| Attribute  | Details                                 |
+| ---------- | --------------------------------------- |
+| Age        | 42                                      |
 | Occupation | Small Business Owner (Handmade Jewelry) |
-| Location | Austin, TX |
-| Revenue | $120,000/year |
+| Location   | Austin, TX                              |
+| Revenue    | $120,000/year                           |
 
 **Goals:**
+
 - Grow his customer base beyond local markets
 - Differentiate from mass-produced competitors
 - Support the same environmental causes his customers care about
 - Build a sustainable, ethical business
 
 **Pain Points:**
+
 - Platform fees eat into thin margins
 - Hard to stand out in crowded marketplaces
 - Doesn't have time for complex charity admin
 
 **Tech Behavior:**
+
 - Desktop primary, mobile for orders
 - Email for business communications
 - Quick learner but prefers simple interfaces
 - Uses QuickBooks for accounting
 
-> *"I want my business to mean something more than profit."*
+> _"I want my business to mean something more than profit."_
 
 ---
 
 #### Sofia - The Charity Coordinator
 
-| Attribute | Details |
-|-----------|---------|
-| Age | 35 |
+| Attribute  | Details                                     |
+| ---------- | ------------------------------------------- |
+| Age        | 35                                          |
 | Occupation | Development Director (Education Non-profit) |
-| Location | Denver, CO |
-| Budget | $2M annual fundraising |
+| Location   | Denver, CO                                  |
+| Budget     | $2M annual fundraising                      |
 
 **Goals:**
+
 - Diversify fundraising beyond grants and events
 - Reach younger demographics
 - Provide transparent impact reporting to donors
 - Reduce administrative overhead
 
 **Pain Points:**
+
 - Reliance on few major donors is risky
 - Traditional fundraising feels dated
 - Hard to show concrete impact to small donors
 
 **Tech Behavior:**
+
 - Comfortable with CRM systems (Salesforce)
 - Data-driven decision maker
 - Active on social media for awareness
 - Uses spreadsheets heavily for reporting
 
-> *"I need new ways to engage donors who are tired of gala invitations and direct mail."*
+> _"I need new ways to engage donors who are tired of gala invitations and direct mail."_
 
 ---
 
@@ -211,23 +230,23 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### Alex - The Deal Hunter
 
-| Attribute | Details |
-|-----------|---------|
-| Age | 24 |
-| Occupation | Graduate Student |
-| Goal | Maximize value for limited budget |
-| Behavior | Price comparison, coupon seeking, cashback awareness |
-| Opportunity | Round-up donations feel like "free" good deeds |
+| Attribute   | Details                                              |
+| ----------- | ---------------------------------------------------- |
+| Age         | 24                                                   |
+| Occupation  | Graduate Student                                     |
+| Goal        | Maximize value for limited budget                    |
+| Behavior    | Price comparison, coupon seeking, cashback awareness |
+| Opportunity | Round-up donations feel like "free" good deeds       |
 
 #### Jennifer - The Corporate Buyer
 
-| Attribute | Details |
-|-----------|---------|
-| Age | 48 |
-| Occupation | Procurement Manager |
-| Goal | Source gifts for corporate social responsibility programs |
-| Behavior | Bulk orders, vendor compliance requirements |
-| Opportunity | CSR marketplace integration, impact reporting |
+| Attribute   | Details                                                   |
+| ----------- | --------------------------------------------------------- |
+| Age         | 48                                                        |
+| Occupation  | Procurement Manager                                       |
+| Goal        | Source gifts for corporate social responsibility programs |
+| Behavior    | Bulk orders, vendor compliance requirements               |
+| Opportunity | CSR marketplace integration, impact reporting             |
 
 ---
 
@@ -235,11 +254,11 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 4.1 Market Size
 
-| Segment | TAM | SAM | SOM |
-|---------|-----|-----|-----|
+| Segment              | TAM   | SAM   | SOM   |
+| -------------------- | ----- | ----- | ----- |
 | E-commerce Platforms | $6.5T | $150B | $500M |
-| Charity Technology | $25B | $5B | $100M |
-| Integrated Solution | - | - | $200M |
+| Charity Technology   | $25B  | $5B   | $100M |
+| Integrated Solution  | -     | -     | $200M |
 
 ### 4.2 Target Market Segments
 
@@ -250,12 +269,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 4.3 Competitive Analysis
 
-| Competitor | Strengths | Weaknesses | Blue Market Advantage |
-|------------|-----------|------------|----------------------|
-| Amazon | Scale, logistics | No charity integration | Purpose-built for giving |
-| Shopify | Easy setup | Transaction fees, no charity native | Built-in charity layer |
-| eBay | Auction model | Declining relevance | Fresh approach |
-| GoodMarket | Charity focus | Limited commerce features | Full e-commerce + charity |
+| Competitor | Strengths        | Weaknesses                          | Blue Market Advantage     |
+| ---------- | ---------------- | ----------------------------------- | ------------------------- |
+| Amazon     | Scale, logistics | No charity integration              | Purpose-built for giving  |
+| Shopify    | Easy setup       | Transaction fees, no charity native | Built-in charity layer    |
+| eBay       | Auction model    | Declining relevance                 | Fresh approach            |
+| GoodMarket | Charity focus    | Limited commerce features           | Full e-commerce + charity |
 
 ### 4.4 Market Timing
 
@@ -270,31 +289,31 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 5.1 Feature Overview
 
-| Feature | Customer | Seller | Admin/Charity |
-|---------|----------|--------|---------------|
+| Feature                 | Customer | Seller | Admin/Charity |
+| ----------------------- | -------- | ------ | ------------- |
 | **User Authentication** |
-| User Registration/Auth | ✓ | ✓ | ✓ |
-| Social Login | ✓ | ✓ | ✓ |
-| **E-commerce Core** |
-| Product Browsing | ✓ | - | ✓ |
-| Product Search | ✓ | - | ✓ |
-| Shopping Cart | ✓ | - | - |
-| Checkout Flow | ✓ | - | - |
-| Order Tracking | ✓ | ✓ | ✓ |
-| Payment Processing | ✓ | - | ✓ |
-| **Charity Features** |
-| Round-up Donation | ✓ | - | ✓ |
-| Charity Product Tagging | ✓ | ✓ | ✓ |
-| Charity Marketplace | ✓ | - | ✓ |
-| Campaign Management | - | - | ✓ |
-| Donation Receipts | ✓ | - | ✓ |
-| Impact Dashboard | ✓ | ✓ | ✓ |
-| **Seller Tools** |
-| Seller Dashboard | - | ✓ | - |
-| Product Management | - | ✓ | ✓ |
-| Order Management | - | ✓ | ✓ |
-| Analytics & Reporting | Limited | ✓ | ✓ |
-| Payout Management | - | ✓ | ✓ |
+| User Registration/Auth  | ✓        | ✓      | ✓             |
+| Social Login            | ✓        | ✓      | ✓             |
+| **E-commerce Core**     |
+| Product Browsing        | ✓        | -      | ✓             |
+| Product Search          | ✓        | -      | ✓             |
+| Shopping Cart           | ✓        | -      | -             |
+| Checkout Flow           | ✓        | -      | -             |
+| Order Tracking          | ✓        | ✓      | ✓             |
+| Payment Processing      | ✓        | -      | ✓             |
+| **Charity Features**    |
+| Round-up Donation       | ✓        | -      | ✓             |
+| Charity Product Tagging | ✓        | ✓      | ✓             |
+| Charity Marketplace     | ✓        | -      | ✓             |
+| Campaign Management     | -        | -      | ✓             |
+| Donation Receipts       | ✓        | -      | ✓             |
+| Impact Dashboard        | ✓        | ✓      | ✓             |
+| **Seller Tools**        |
+| Seller Dashboard        | -        | ✓      | -             |
+| Product Management      | -        | ✓      | ✓             |
+| Order Management        | -        | ✓      | ✓             |
+| Analytics & Reporting   | Limited  | ✓      | ✓             |
+| Payout Management       | -        | ✓      | ✓             |
 
 ### 5.2 Feature Priority Matrix
 
@@ -325,13 +344,14 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-001: User Registration
 
-| Field | Value |
-|-------|-------|
-| **Description** | New users can create accounts with email/password |
-| **Actors** | Guest → Customer |
-| **Pre-conditions** | None |
+| Field              | Value                                             |
+| ------------------ | ------------------------------------------------- |
+| **Description**    | New users can create accounts with email/password |
+| **Actors**         | Guest → Customer                                  |
+| **Pre-conditions** | None                                              |
 
 **Main Flow:**
+
 1. User clicks "Sign Up"
 2. User enters: email, password, name
 3. System validates email format and password strength
@@ -340,10 +360,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 6. Account activated
 
 **Alternate Flows:**
+
 - Social Login: OAuth with Google/Apple/Facebook
 - Seller Registration: Additional business verification step
 
 **Acceptance Criteria:**
+
 - ✓ Email validation prevents duplicates
 - ✓ Password requires 8+ chars, 1 uppercase, 1 number
 - ✓ Verification email sent within 5 seconds
@@ -353,10 +375,10 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-002: Authentication
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                       |
+| --------------- | ------------------------------------------- |
 | **Description** | Users can securely log in to their accounts |
-| **Actors** | Customer, Seller, Admin |
+| **Actors**      | Customer, Seller, Admin                     |
 
 **Technical Spec:**
 | Specification | Value |
@@ -367,6 +389,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | MFA | TOTP support (optional) |
 
 **Acceptance Criteria:**
+
 - ✓ Failed login after 5 attempts triggers 15min lockout
 - ✓ JWT refresh without re-authentication
 - ✓ Session invalidation on password change
@@ -378,11 +401,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-010: Product Browsing
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                      |
+| --------------- | ------------------------------------------ |
 | **Description** | Customers can browse and discover products |
 
 **Features:**
+
 - Category hierarchy navigation (3 levels deep)
 - Featured/Recommended products carousel
 - New arrivals section
@@ -390,11 +414,13 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - "Shop for Good" charity-tagged products section
 
 **Performance Requirements:**
+
 - Category page load: < 500ms
 - Image lazy loading for 100+ products
 - Infinite scroll or pagination (24 items/page)
 
 **Acceptance Criteria:**
+
 - ✓ Responsive design for mobile/tablet/desktop
 - ✓ Products show: image, name, price, rating, charity tag
 - ✓ Quick view modal without leaving page
@@ -403,11 +429,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-011: Product Search
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                 |
+| --------------- | ------------------------------------- |
 | **Description** | Full-text and filtered product search |
 
 **Features:**
+
 - Autocomplete suggestions (debounced 300ms)
 - Spell correction and fuzzy matching
 - Filters: category, price range, rating, charity tag
@@ -422,6 +449,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | Ranking | TF-IDF with custom boosts for charity products |
 
 **Acceptance Criteria:**
+
 - ✓ Search results < 200ms for 95th percentile
 - ✓ Autocomplete returns results as user types
 - ✓ "No results" page suggests alternatives
@@ -433,11 +461,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-020: Shopping Cart
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                      |
+| --------------- | ------------------------------------------ |
 | **Description** | Customers can add products and manage cart |
 
 **Features:**
+
 - Add/remove products
 - Update quantities (1-99 per item)
 - Save for later (wishlist)
@@ -446,11 +475,13 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - Charity contribution display (if round-up enabled)
 
 **Business Rules:**
+
 - Maximum 50 unique products per cart
 - Maximum quantity 99 per product
 - Cart items held for 7 days (stock check)
 
 **Acceptance Criteria:**
+
 - ✓ Cart badge shows item count on all pages
 - ✓ Unauthenticated cart merges on login
 - ✓ Out-of-stock items highlighted with warning
@@ -460,8 +491,8 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-021: Checkout Flow
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                       |
+| --------------- | --------------------------- |
 | **Description** | Multi-step checkout process |
 
 **Steps:** 1 → 2 → 3 → 4 → 5 → 6
@@ -507,11 +538,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-030: Round-up Donations
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                            |
+| --------------- | ------------------------------------------------ |
 | **Description** | Customers can round up order total as a donation |
 
 **User Experience:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  Your Order Total: $47.23                                   │
@@ -524,6 +556,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 ```
 
 **Default Causes (user can change):**
+
 - Global Education Fund
 - Environmental Conservation
 - Hunger Relief
@@ -531,11 +564,13 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - Community Development
 
 **Technical Spec:**
+
 - Round-up calculated client-side and verified server-side
 - Donation added to order total for payment processing
 - Separate line item in order for clarity
 
 **Acceptance Criteria:**
+
 - ✓ Default: round-up enabled but can opt-out
 - ✓ User can select preferred cause
 - ✓ Impact statement shown ("$0.77 provides X")
@@ -545,27 +580,31 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-031: Charity Product Tagging
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                        |
+| --------------- | -------------------------------------------- |
 | **Description** | Sellers can tag products as charity products |
 
 **Tag Types:**
+
 - 100% of proceeds to charity (seller absorbs costs)
 - Percentage to charity (e.g., 10% of each sale)
 - Fixed amount per sale (e.g., $1 per item)
 
 **Requirements:**
+
 - Seller must select verified charity partner
 - Product description must include charity details
 - Seller must maintain donation commitment for 90 days
 
 **Display:**
+
 - Charity badge on product listing
 - "Shop for Good" section in search results
 - Charity details on product page
 - Fundraising progress bar for ongoing campaigns
 
 **Acceptance Criteria:**
+
 - ✓ Verified charities only (manual verification)
 - ✓ Impact metrics displayed on product
 - ✓ Seller performance tracked for accuracy
@@ -575,11 +614,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-032: Charity Marketplace
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                          |
+| --------------- | ---------------------------------------------- |
 | **Description** | Dedicated section for charity-focused shopping |
 
 **Sections:**
+
 - Featured Causes (rotating campaigns)
 - Shop by Cause (Education, Environment, Health, etc.)
 - Top Fundraisers (products raising most)
@@ -599,12 +639,14 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | Human Rights | Advocacy and protection |
 
 **Features:**
+
 - Cause pages with mission, impact metrics, products
 - Fundraising thermometer for campaigns
 - "Meet the Beneficiary" stories
 - Progress updates from charities
 
 **Acceptance Criteria:**
+
 - ✓ Each cause shows: total raised, donors, products
 - ✓ Monthly giving option available
 - ✓ Shareable cause pages for social media
@@ -613,11 +655,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-033: Impact Dashboard
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                        |
+| --------------- | -------------------------------------------- |
 | **Description** | Users see their collective charitable impact |
 
 **Customer Dashboard:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  YOUR IMPACT JOURNEY                                         │
@@ -637,18 +680,21 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 ```
 
 **Seller Dashboard:**
+
 - Total raised through charity products
 - Breakdown by cause
 - Customer engagement with charity items
 - Tax receipt for charitable deductions
 
 **Charity Dashboard:**
+
 - Total received from platform
 - Donation trends over time
 - Donor demographics (aggregated)
 - Export reports for accounting
 
 **Acceptance Criteria:**
+
 - ✓ Real-time updates after order completion
 - ✓ Downloadable impact report (PDF)
 - ✓ Social share cards with personalized stats
@@ -660,11 +706,12 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-040: Seller Registration & Verification
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                              |
+| --------------- | -------------------------------------------------- |
 | **Description** | Businesses can register as sellers on the platform |
 
 **Registration Steps:**
+
 1. Business Information (name, type, Tax ID)
 2. Contact Details (owner, email, phone)
 3. Business Address & Shipping Origin
@@ -673,6 +720,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 6. Terms Acceptance
 
 **Verification:**
+
 - Automated: Business name/ID validation
 - Manual: Document review within 48 hours
 - Two-factor: Phone verification for payouts
@@ -685,6 +733,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | Enterprise | Unlimited | Custom | Dedicated support, API access |
 
 **Acceptance Criteria:**
+
 - ✓ Verification status shown in dashboard
 - ✓ Can start listing before full verification
 - ✓ Payout access only after verification complete
@@ -693,8 +742,8 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-041: Product Management
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                               |
+| --------------- | --------------------------------------------------- |
 | **Description** | Sellers can create and manage their product catalog |
 
 **Product Creation Fields:**
@@ -713,12 +762,14 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | Charity tagging | optional |
 
 **Bulk Operations:**
+
 - CSV import/export
 - Bulk edit
 - Bulk pricing updates
 - Inventory sync via API
 
 **Acceptance Criteria:**
+
 - ✓ Draft save before publishing
 - ✓ Image optimization on upload
 - ✓ Duplicate product quick action
@@ -728,17 +779,19 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-042: Order Management
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                          |
+| --------------- | ---------------------------------------------- |
 | **Description** | Sellers manage incoming orders and fulfillment |
 
 **Order List Features:**
+
 - Filterable by: status, date, customer
 - Sortable by: date, amount, status
 - Bulk actions: print labels, mark shipped
 - Search by order number or customer
 
 **Order Details:**
+
 - Customer information (shipping address)
 - Items ordered with customization
 - Payment status
@@ -747,6 +800,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - Refund/cancellation controls
 
 **Fulfillment:**
+
 - Generate shipping label (integrated carriers)
 - Mark as shipped (auto-triggers tracking)
 - Print packing slip
@@ -754,6 +808,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - Estimated ship date reminders
 
 **Acceptance Criteria:**
+
 - ✓ Real-time order notifications
 - ✓ One-click ship confirmation
 - ✓ Return request handling workflow
@@ -763,8 +818,8 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 #### F-043: Analytics & Reporting
 
-| Field | Value |
-|-------|-------|
+| Field           | Value                                             |
+| --------------- | ------------------------------------------------- |
 | **Description** | Sellers access sales data and performance metrics |
 
 **Dashboard Metrics:**
@@ -778,6 +833,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 | Charity Impact Summary | donations raised |
 
 **Reports:**
+
 - Sales by Period (daily, weekly, monthly, custom)
 - Product Performance
 - Customer Retention
@@ -787,11 +843,13 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 - Tax Documents
 
 **Export Options:**
+
 - CSV/Excel download
 - Scheduled email reports
 - API access for BI integration
 
 **Acceptance Criteria:**
+
 - ✓ Real-time data (15-minute refresh)
 - ✓ Customizable date ranges
 - ✓ Comparison to previous period
@@ -843,6 +901,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 ### 7.3 Checkout Donation Flow
 
 **Step 1: Cart Review**
+
 ```
 ┌────────────────────────────────────────────────────────┐
 │  Items: $45.99                                        │
@@ -860,6 +919,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 ```
 
 **Step 2: Payment**
+
 ```
 ┌────────────────────────────────────────────────────────┐
 │  Order Total: $52.00                                  │
@@ -871,6 +931,7 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 ```
 
 **Step 3: Confirmation**
+
 ```
 ┌────────────────────────────────────────────────────────┐
 │  Order #BM-2026-001234 CONFIRMED!                      │
@@ -933,23 +994,23 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 8.2 Data Retention Policy
 
-| Data Type | Retention Period | Reason |
-|-----------|-----------------|--------|
-| User PII | Until account deletion + 30 days | Legal compliance |
-| Transaction Records | 7 years | Tax/legal requirements |
-| Donation Records | Permanent | Impact tracking |
-| Session Logs | 90 days | Security |
-| Analytics Data | 2 years | Business intelligence |
-| System Logs | 1 year | Troubleshooting |
+| Data Type           | Retention Period                 | Reason                 |
+| ------------------- | -------------------------------- | ---------------------- |
+| User PII            | Until account deletion + 30 days | Legal compliance       |
+| Transaction Records | 7 years                          | Tax/legal requirements |
+| Donation Records    | Permanent                        | Impact tracking        |
+| Session Logs        | 90 days                          | Security               |
+| Analytics Data      | 2 years                          | Business intelligence  |
+| System Logs         | 1 year                           | Troubleshooting        |
 
 ### 8.3 Privacy & Compliance
 
-| Regulation | Requirements |
-|------------|--------------|
-| **GDPR** | EU user data processing consent, right to deletion |
-| **CCPA** | California consumer privacy rights |
-| **PCI-DSS** | Payment card data handling |
-| **SOC 2** | Security controls for charity fund handling |
+| Regulation  | Requirements                                       |
+| ----------- | -------------------------------------------------- |
+| **GDPR**    | EU user data processing consent, right to deletion |
+| **CCPA**    | California consumer privacy rights                 |
+| **PCI-DSS** | Payment card data handling                         |
+| **SOC 2**   | Security controls for charity fund handling        |
 
 ---
 
@@ -957,21 +1018,21 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 9.1 Performance
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Page Load (P95) | < 2s | Real user monitoring |
-| API Response (P95) | < 200ms | APM tool |
-| Checkout Completion | < 30s | Synthetic monitoring |
-| Search Results | < 500ms | Performance tests |
-| Concurrent Users | 5,000 | Load testing |
+| Metric              | Target  | Measurement          |
+| ------------------- | ------- | -------------------- |
+| Page Load (P95)     | < 2s    | Real user monitoring |
+| API Response (P95)  | < 200ms | APM tool             |
+| Checkout Completion | < 30s   | Synthetic monitoring |
+| Search Results      | < 500ms | Performance tests    |
+| Concurrent Users    | 5,000   | Load testing         |
 
 ### 9.2 Availability
 
-| Environment | Uptime Target | RTO | RPO |
-|-------------|---------------|-----|-----|
-| Production | 99.9% | 4 hours | 1 hour |
-| Staging | 99% | 8 hours | 24 hours |
-| Development | N/A | N/A | N/A |
+| Environment | Uptime Target | RTO     | RPO      |
+| ----------- | ------------- | ------- | -------- |
+| Production  | 99.9%         | 4 hours | 1 hour   |
+| Staging     | 99%           | 8 hours | 24 hours |
+| Development | N/A           | N/A     | N/A      |
 
 ### 9.3 Scalability
 
@@ -982,13 +1043,13 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 9.4 Security
 
-| Area | Implementation |
-|------|----------------|
-| **Authentication** | OAuth 2.0, JWT, MFA support |
-| **Authorization** | Role-based access control (RBAC) |
-| **Data Protection** | AES-256 encryption at rest, TLS 1.3 in transit |
-| **Vulnerability Management** | Monthly scans, quarterly pen tests |
-| **Incident Response** | 24-hour notification, 4-hour containment |
+| Area                         | Implementation                                 |
+| ---------------------------- | ---------------------------------------------- |
+| **Authentication**           | OAuth 2.0, JWT, MFA support                    |
+| **Authorization**            | Role-based access control (RBAC)               |
+| **Data Protection**          | AES-256 encryption at rest, TLS 1.3 in transit |
+| **Vulnerability Management** | Monthly scans, quarterly pen tests             |
+| **Incident Response**        | 24-hour notification, 4-hour containment       |
 
 ---
 
@@ -996,75 +1057,75 @@ Blue Market combines a full-featured e-commerce platform with built-in charity i
 
 ### 10.1 Business Metrics
 
-| Metric | Baseline | 6-Month Target | 12-Month Target |
-|--------|----------|----------------|-----------------|
-| GMV (Gross Merchandise Value) | $0 | $500K | $5M |
-| Active Sellers | 0 | 50 | 500 |
-| Active Buyers | 0 | 2,000 | 20,000 |
-| Total Donations Raised | $0 | $25K | $250K |
-| Average Donation Rate | N/A | 30% | 40% |
-| Customer Acquisition Cost | N/A | $15 | $10 |
-| Lifetime Value per Customer | N/A | $150 | $200 |
+| Metric                        | Baseline | 6-Month Target | 12-Month Target |
+| ----------------------------- | -------- | -------------- | --------------- |
+| GMV (Gross Merchandise Value) | $0       | $500K          | $5M             |
+| Active Sellers                | 0        | 50             | 500             |
+| Active Buyers                 | 0        | 2,000          | 20,000          |
+| Total Donations Raised        | $0       | $25K           | $250K           |
+| Average Donation Rate         | N/A      | 30%            | 40%             |
+| Customer Acquisition Cost     | N/A      | $15            | $10             |
+| Lifetime Value per Customer   | N/A      | $150           | $200            |
 
 ### 10.2 Technical Metrics
 
-| Metric | Target |
-|--------|--------|
-| System Uptime | 99.9% |
-| API Availability | 99.95% |
-| Mean Response Time | < 100ms |
-| Error Rate | < 0.1% |
-| Deployment Frequency | 2-3x per week per service |
-| Lead Time for Changes | < 4 hours |
-| Change Failure Rate | < 5% |
+| Metric                | Target                    |
+| --------------------- | ------------------------- |
+| System Uptime         | 99.9%                     |
+| API Availability      | 99.95%                    |
+| Mean Response Time    | < 100ms                   |
+| Error Rate            | < 0.1%                    |
+| Deployment Frequency  | 2-3x per week per service |
+| Lead Time for Changes | < 4 hours                 |
+| Change Failure Rate   | < 5%                      |
 
 ### 10.3 User Engagement Metrics
 
-| Metric | Target |
-|--------|--------|
-| Monthly Active Users (MAU) | 10,000 (by month 6) |
-| Daily Active Users (DAU) | 2,000 |
-| Conversion Rate (visit → purchase) | 3% |
-| Cart Abandonment Rate | < 60% |
-| Checkout Completion Rate | > 70% |
-| NPS Score | > 40 |
-| App Store Rating | 4.5+ |
+| Metric                             | Target              |
+| ---------------------------------- | ------------------- |
+| Monthly Active Users (MAU)         | 10,000 (by month 6) |
+| Daily Active Users (DAU)           | 2,000               |
+| Conversion Rate (visit → purchase) | 3%                  |
+| Cart Abandonment Rate              | < 60%               |
+| Checkout Completion Rate           | > 70%               |
+| NPS Score                          | > 40                |
+| App Store Rating                   | 4.5+                |
 
 ### 10.4 Charity Impact Metrics
 
-| Metric | Target |
-|--------|--------|
-| Causes Supported | 50+ |
-| Verified Charities | 25+ |
-| Donation Transactions | 10,000+ annually |
-| Average Donation | $2.50 |
-| Repeat Donors | 40% |
-| Impact Reports Generated | Monthly |
+| Metric                   | Target           |
+| ------------------------ | ---------------- |
+| Causes Supported         | 50+              |
+| Verified Charities       | 25+              |
+| Donation Transactions    | 10,000+ annually |
+| Average Donation         | $2.50            |
+| Repeat Donors            | 40%              |
+| Impact Reports Generated | Monthly          |
 
 ---
 
 ## 11. Glossary
 
-| Term | Definition |
-|------|------------|
-| **BFF** | Backend for Frontend - API pattern for client-specific services |
-| **Charity Tag** | Product marked as contributing to a charitable cause |
-| **GMV** | Gross Merchandise Value - total sales value before deductions |
-| **Round-up** | Feature that rounds up purchase total to nearest dollar for donation |
-| **Seller Tier** | Membership level with different features and fee structures |
-| **SOV** | Share of Voice - visibility metrics |
-| **Staged Rollout** | Gradual feature release to percentage of users |
-| **TFA/MFA** | Two-Factor/Multi-Factor Authentication |
-| **TAM/SAM/SOM** | Total/Servicable/Obtainable Market |
+| Term               | Definition                                                           |
+| ------------------ | -------------------------------------------------------------------- |
+| **BFF**            | Backend for Frontend - API pattern for client-specific services      |
+| **Charity Tag**    | Product marked as contributing to a charitable cause                 |
+| **GMV**            | Gross Merchandise Value - total sales value before deductions        |
+| **Round-up**       | Feature that rounds up purchase total to nearest dollar for donation |
+| **Seller Tier**    | Membership level with different features and fee structures          |
+| **SOV**            | Share of Voice - visibility metrics                                  |
+| **Staged Rollout** | Gradual feature release to percentage of users                       |
+| **TFA/MFA**        | Two-Factor/Multi-Factor Authentication                               |
+| **TAM/SAM/SOM**    | Total/Servicable/Obtainable Market                                   |
 
 ---
 
 ## Document History
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-03-26 | Product Team | Initial draft |
+| Version | Date       | Author       | Changes       |
+| ------- | ---------- | ------------ | ------------- |
+| 1.0     | 2026-03-26 | Product Team | Initial draft |
 
 ---
 
-*End of PRD*
+_End of PRD_
