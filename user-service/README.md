@@ -16,66 +16,78 @@ For more information about Quarkus, visit: <https://quarkus.io/>
 
 ## Project Structure
 
-The service follows a hexagonal architecture (also known as clean architecture) with clear separation of concerns:
+The service follows a **layered clean architecture** with a straightforward **API → Service → Repository** flow:
 
 ```
 src/main/java/com/bluemarket/
 │
-├── domain/                          <-- Core Domain Layer
-│   ├── model/                       <-- Entity classes (User, Profile)
-│   ├── exception/                   <-- Domain-specific exceptions
-│   └── gateway/                     <-- Data access interfaces (Repository contracts)
+├── domain/                          <-- Domain Layer
+│   ├── model/                       <-- Domain models (User) — JPA entities using Panache
+│   ├── repository/                  <-- Repository interfaces (data access contracts)
+│   │   └── IUserRepository          <-- Repository interface defining contract
+│   └── exception/                   <-- Domain-specific exceptions
 │
-├── application/                     <-- Use Case Layer
-│   ├── usecase/                     <-- Business logic & workflows
-│   │   ├── RegisterUserUseCase
-│   │   └── UpdateUserProfileUseCase
-│   ├── request/                     <-- Input DTOs (Commands/Queries)
-│   └── response/                    <-- Output DTOs (Response objects)
+├── application/                     <-- Application Layer
+│   ├── service/                     <-- Business logic & orchestration
+│   │   └── UserService              <-- Service methods (business rules, use cases)
+│   ├── response/                    <-- Output DTOs (Response objects)
+│   └── request/                     <-- Input DTOs (if needed for commands)
 │
-├── infrastructure/                  <-- Outer Layer (Implementation)
-│   ├── persistence/                 <-- Database implementations
-│   │   ├── entity/                  <-- Hibernate @Entity classes
-│   │   ├── mapper/                  <-- Domain <-> Entity mappers
-│   │   └── PostgreSQLUserRepository <-- Implements gateway interface
-│   ├── security/                    <-- Authentication & authorization
-│   │   └── JwtTokenGenerator        <-- JWT security logic
+├── infrastructure/                  <-- Infrastructure Layer
+│   ├── persistence/
+│   │   └── repository/              <-- Repository implementations
+│   │       └── UserRepository       <-- Implements gateway interface
+│   ├── security/                    <-- Authentication & authorization (future)
 │   └── config/                      <-- Quarkus CDI Beans/Producers
 │
-└── presentation/                    <-- Outer Layer (Delivery)
-    ├── rest/                        <-- REST API endpoints (@Path, @GET, @POST)
-    └── mapper/                      <-- DTO <-> Domain mappers
+└── presentation/                    <-- Presentation Layer
+    └── rest/                        <-- REST API endpoints
+        └── UserResources            <-- REST controller (@Path, @GET, @POST)
 ```
 
-### Architectural Layers Explained
+### Architectural Flow
+
+**Request Flow:** `REST Controller` → `Service` → `Repository` → `Domain Model`
+
+```
+UserResources (API)
+    ↓ [calls]
+UserService (Business Logic)
+    ↓ [uses]
+UserRepository (Data Access)
+    ↓ [operates on]
+User (Domain Model/Entity)
+```
+
+### Layers Overview
 
 **Domain Layer (Core)**
 
-- Contains pure business logic independent of frameworks
-- Defines entities (User, Profile) and business rules
-- Declares gateway interfaces for data persistence
-- Houses domain-specific exceptions
+- **Models:** JPA entities (e.g., `User`) using Panache Active Record pattern
+- **Gateways:** Repository interfaces defining data access contracts
+- **Exceptions:** Domain-specific exceptions
 
-**Application Layer (Use Cases)**
+**Application Layer (Business Logic)**
 
-- Orchestrates business workflows (RegisterUser, UpdateProfile)
-- Defines input/output contract via request/response DTOs
-- Uses dependencies from domain and infrastructure layers
-- Remains framework-agnostic
+- **Services:** Orchestrates business workflows and use cases
+  - Implements gateway interfaces through dependency injection
+  - Contains business rules and validation logic
+  - Returns DTOs for API responses
+- **Response/Request DTOs:** Input/output contracts for API
 
-**Infrastructure Layer**
+**Infrastructure Layer (Technical Implementation)**
 
-- Implements domain gateway interfaces with concrete technologies (JPA, Hibernate)
-- Handles database persistence and security concerns
-- Manages external integrations
-- Configures CDI beans and framework-specific setup
+- **Repositories:** Concrete implementations of gateway interfaces
+  - Uses Panache or native queries for database operations
+  - No explicit mappers needed (domain models serve as entities)
+- **Security:** JWT, authentication, authorization handling
+- **Configuration:** CDI beans and framework setup
 
-**Presentation Layer**
+**Presentation Layer (HTTP Interface)**
 
-- Exposes REST API endpoints
-- Handles HTTP request/response mapping
-- Converts between DTOs and domain objects
-- Framework-touching layer (@Quarkus, @JAX-RS)
+- **REST Controllers:** Exposes API endpoints
+- **Dependency Injection:** Injects services to handle business logic
+- **Request/Response Mapping:** Converts between HTTP and DTOs
 
 ## Prerequisites
 

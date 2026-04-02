@@ -21,6 +21,7 @@ dumps
 *.orig
 *.rej
 .factorypath
+build
 graph-output.dot
 *.swp
 *.swo
