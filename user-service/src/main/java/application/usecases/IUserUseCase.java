@@ -1,11 +1,16 @@
 package application.usecases;
 
+import java.util.List;
 import java.util.UUID;
 
 import application.dto.UserInfoRes;
 import io.smallrye.mutiny.Uni;
 
-public interface IUserUseCase extends IBaseUseCase<UserInfoRes, UUID> {
+public interface IUserUseCase {
+    Uni<UserInfoRes> getById(UUID id);
+
+    Uni<List<UserInfoRes>> getAll(int index, int size);
+
     Uni<UserInfoRes> getUserByEmail(String email);
 
     Uni<UserInfoRes> getUserByUsername(String username);
