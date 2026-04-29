@@ -30,7 +30,9 @@ public class UserUseCase implements application.usecases.IUserUseCase {
 
     @Override
     public Uni<List<UserInfoRes>> getAll(int index, int size) {
-        return userRepository.findAll(index, size)
+        return userRepository.findAll()
+                .range(index, index + size)
+                .list()
                 .onItem().transform(users -> users.stream()
                         .map(userMapper::toDto)
                         .toList());
