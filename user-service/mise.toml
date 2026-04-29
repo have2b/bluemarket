@@ -1,0 +1,4 @@
+[tools]
+gradle = "latest"
+java = "25"
+quarkus = "latest"
