@@ -33,4 +33,12 @@ public abstract class BaseEntity extends PanacheEntityBase {
     protected void preUpdate() {
         updatedAt = new Timestamp(System.currentTimeMillis());
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
 }
